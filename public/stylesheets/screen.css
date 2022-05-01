@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../var/lib/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/Menu/menu.scss */
+.menu {
+  background-color: #1A1A1A;
+  top: 0px;
+  left: 0px;
+  width: 1366px;
+  height: 56px;
+}
+
+/* line 13, ../sass/Menu/menu.scss */
+.custom-navbar {
+  box-shadow: 10px 10px 10px #eee;
+  z-index: 1;
+  background-color: #1A1A1A;
+}
+
+/* line 18, ../sass/Menu/menu.scss */
+.nav-link {
+  color: #ffffff !important;
+}
+
+/* line 21, ../sass/Menu/menu.scss */
+.nav-item:hover {
+  border-bottom: 3px solid #FF9D19;
+}
+
+/* line 27, ../sass/Menu/menu.scss */
+.custom-toggler.navbar-toggler {
+  border-color: #f7204e;
+}
+
+/* line 30, ../sass/Menu/menu.scss */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,32,78, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* line 33, ../sass/Menu/menu.scss */
+.custom-toggler .navbar-toggler-icon {
+  width: 18px !important;
+}
+
+/* line 36, ../sass/Menu/menu.scss */
+.custom-toggler:hover {
+  border-color: white;
+  background-color: #f76a88;
+}
+
+/* line 39, ../sass/Menu/menu.scss */
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* line 42, ../sass/Menu/menu.scss */
+#logo_custom {
+  margin-top: -6px;
+}
+
+/* line 49, ../sass/Menu/menu.scss */
+.notification {
+  padding: 4px;
+  margin-right: 11px;
+}
+
+@media only screen and (max-width: 760px) {
+  /* line 64, ../sass/Menu/menu.scss */
+  #logo_custom {
+    width: 40%;
+  }
+}
+/* line 11, ../sass/commande/liste_commande.scss */
+.principale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* line 21, ../sass/commande/liste_commande.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+
+/* line 27, ../sass/commande/liste_commande.scss */
+.partie1 {
+  width: 100%;
+  margin: 0px auto 40px auto;
+  background-color: white;
+  color: black;
+  position: sticky;
+  top: 0px;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+/* line 37, ../sass/commande/liste_commande.scss */
+.partie1 ul {
+  list-style-type: none;
+}
+
+/* line 41, ../sass/commande/liste_commande.scss */
+.partie1 li {
+  float: left;
+  width: 10%;
+  /*100% divisé par le nombre d'éléments de menu*/
+  text-align: center;
+  /*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+/* line 48, ../sass/commande/liste_commande.scss */
+.partie1 ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 54, ../sass/commande/liste_commande.scss */
+.partie1 a {
+  display: block;
+  /*Toute la surface sera cliquable*/
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+  /*Agrandit le menu et espace la bordure du texte*/
+}
+
+/* line 61, ../sass/commande/liste_commande.scss */
+.partie1 a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+}
+
+/* line 66, ../sass/commande/liste_commande.scss */
+.partie2 {
+  display: flex;
+  background-color: #fbffff;
+}
+
+/* line 1, ../sass/commande/produits.scss */
+.container {
+  background-color: aqua;
+}
+
+/* line 16, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}

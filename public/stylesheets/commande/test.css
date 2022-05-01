@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* line 1, ../../sass/commande/test.scss */
+.container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 11, ../../sass/commande/test.scss */
+.menu1 {
+  display: block;
+  background-color: white;
+  width: 100%;
+  border: 2px solid #EAEAEA;
+}
+
+/* line 19, ../../sass/commande/test.scss */
+.menu2 {
+  background-color: white;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+/* line 26, ../../sass/commande/test.scss */
+.menu2 ul {
+  list-style-type: none;
+}
+
+/* line 30, ../../sass/commande/test.scss */
+.menu2 li {
+  display: table-cell;
+  width: 25%;
+  padding: 4px;
+  /*100% divisé par le nombre d'éléments de menu*/
+  text-align: center;
+  /*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+/* line 38, ../../sass/commande/test.scss */
+.menu2 ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 44, ../../sass/commande/test.scss */
+.menu2 a {
+  display: block;
+  /*Toute la surface sera cliquable*/
+  text-decoration: none;
+  color: black;
+  padding: 0px 3px;
+  /*Agrandit le menu et espace la bordure du texte*/
+}
+
+/* line 51, ../../sass/commande/test.scss */
+.menu2 a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+/* line 56, ../../sass/commande/test.scss */
+.menu2 {
+  display: flex;
+  background-color: #fbffff;
+}
+
+/* line 62, ../../sass/commande/test.scss */
+.select {
+  float: right;
+  margin-top: -40px;
+  padding: 7px;
+}
+
+/* line 67, ../../sass/commande/test.scss */
+.span {
+  padding: 7px;
+  color: #ACACAC;
+  font-size: 14px;
+}
+
+/* line 74, ../../sass/commande/test.scss */
+.span h5 {
+  padding-left: 16px;
+}
+
+/* line 79, ../../sass/commande/test.scss */
+button, select {
+  text-transform: none;
+  padding: 4px;
+  border-radius: 2px;
+  outline: none;
+  background-color: white;
+}

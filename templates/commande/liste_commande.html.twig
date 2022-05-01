@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+    {{ parent() }}
+
+    <body>
+
+        {% block content %} 
+
+            <div class="container ">
+                <div class="partie1">
+                        <ul>
+                          <li><a href="#">Tout</a></li>
+                          <li><a href="#">En cours</a></li>
+                          <li><a href="#">Validées</a></li>
+                          <li><a href="#">Payées</a></li>
+                          <li><a href="#">Annulées</a></li>
+
+                        </ul>
+                </div>
+                
+                
+            </div>        
+        {% endblock %}
+
+    </body>
+
+{% endblock %}
+

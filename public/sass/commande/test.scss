@@ -1,0 +1,85 @@
+.container{
+    background-color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+  
+.menu1{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 2px solid #EAEAEA;
+
+}
+
+.menu2{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid #EAEAEA;
+
+
+}
+
+.menu2 ul {
+    list-style-type: none;
+}
+
+.menu2 li{
+    display: table-cell;
+    width: 25%;
+    padding: 4px;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+.menu2 ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu2 a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    padding: 0px 3px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+.menu2 a:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    
+}   
+.menu2{
+    display: flex;
+    background-color: rgb(251, 255, 255);
+
+}
+
+.select{
+    float: right;
+    margin-top: -40px;
+    padding: 7px;
+}
+.span{
+    padding: 7px;
+    color: #ACACAC;
+    font-size: 14px;
+
+}
+
+.span h5 {
+    padding-left: 16px;
+    
+}
+
+button, select {
+    text-transform: none;
+    padding: 4px;
+    border-radius: 2px;
+    outline: none;
+    background-color: white;
+}

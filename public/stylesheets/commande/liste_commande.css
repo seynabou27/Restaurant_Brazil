@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* line 11, ../../sass/commande/liste_commande.scss */
+.principale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* line 21, ../../sass/commande/liste_commande.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+
+/* line 27, ../../sass/commande/liste_commande.scss */
+.partie1 {
+  width: 100%;
+  margin: 0px auto 40px auto;
+  background-color: white;
+  color: black;
+  position: sticky;
+  top: 0px;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+/* line 37, ../../sass/commande/liste_commande.scss */
+.partie1 ul {
+  list-style-type: none;
+}
+
+/* line 41, ../../sass/commande/liste_commande.scss */
+.partie1 li {
+  float: left;
+  width: 10%;
+  /*100% divisé par le nombre d'éléments de menu*/
+  text-align: center;
+  /*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+/* line 48, ../../sass/commande/liste_commande.scss */
+.partie1 ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 54, ../../sass/commande/liste_commande.scss */
+.partie1 a {
+  display: block;
+  /*Toute la surface sera cliquable*/
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+  /*Agrandit le menu et espace la bordure du texte*/
+}
+
+/* line 61, ../../sass/commande/liste_commande.scss */
+.partie1 a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+}
+
+/* line 66, ../../sass/commande/liste_commande.scss */
+.partie2 {
+  display: flex;
+  background-color: #fbffff;
+}
